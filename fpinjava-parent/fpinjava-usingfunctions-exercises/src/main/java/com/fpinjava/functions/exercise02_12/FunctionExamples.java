@@ -6,17 +6,22 @@ public class FunctionExamples {
    * Note: The same implementation may be used for all four cases.
    */
 
-  public static final Function<Integer, Integer> factorial0 = null; // To be implemented
+  public static final Function<Integer, Integer> factorial;
+  static {
+    factorial = x-> x <= 1 ? 1 : x * FunctionExamples.factorial.apply(x-1);
+  }
+
+  public static final Function<Integer, Integer> factorial0 = x -> factorial.apply(x); // To be implemented
 
   public static Function<Integer, Integer> factorial1;
   static {
-    factorial1 = null; // To be implemented
+    factorial1 =  x-> factorial.apply(x); // To be implemented
   }
 
-  public final Function<Integer, Integer> factorial2 = null; // To be implemented
+  public final Function<Integer, Integer> factorial2 = x-> factorial.apply(x); // To be implemented
 
   public Function<Integer, Integer> factorial3;
   {
-    factorial3 = null; // To be implemented
+    factorial3 = x-> factorial.apply(x); // To be implemented
   }
 }
