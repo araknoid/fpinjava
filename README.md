@@ -3,8 +3,8 @@ closest you'll get to having your own private functional programming tutor witho
 
 [![Build Status][badge-travis]][travis]
 
-[badge-travis]: https://travis-ci.org/fpinjava/fpinjava.png?branch=master
-[travis]: https://travis-ci.org/fpinjava/fpinjava
+[badge-travis]: https://travis-ci.org/araknoid/fpinjava.png?branch=master
+[travis]: https://travis-ci.org/araknoid/fpinjava
 
 ## How to use the project
 
